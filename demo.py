@@ -5,7 +5,7 @@ from transformers import *
 import torch
 
 
-st.title('# OpenAI GPT2 Language generation')
+st.title('OpenAI GPT2 Language generation')
 
 st.sidebar.markdown('## Find me here [@nikhilranjan7](https://nikhilranjan7.github.io)')
 st.sidebar.markdown('#### Hyperparameters Settings:')
