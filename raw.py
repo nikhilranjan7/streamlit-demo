@@ -5,7 +5,10 @@ from transformers import *
 import torch
 
 
-st.title('OpenAI GPT2 Language generation')
+st.title('# OpenAI GPT2 Language generation')
+
+st.sidebar.markdown('## Find me here [@nikhilranjan7](https://nikhilranjan7.github.io)')
+st.sidebar.markdown('#### Hyperparameters Settings:')
 
 def load_model():
     tokenizer = AutoTokenizer.from_pretrained('gpt2')   # Initialize tokenizer
@@ -38,4 +41,3 @@ if len(x) > 0:
         st.markdown('## Output {}:'.format(i+1))
         st.markdown('#### Perplexity: {}'.format(round(ans_tuple[i][0],4)))
         st.text('\n{}'.format(ans_tuple[i][1]))
-
